@@ -23,3 +23,13 @@ git tag (list all tags)
   - dashboard: https://getbootstrap.com/docs/5.2/examples/dashboard/
 
 - git tag: 1_init_project_with_template_and_components
+
+## module and code refactor
+
+```
+ng g m public
+ng g m secure
+ng g c secure
+ng g c public
+```
+- git tag: 2_module_public_secure
