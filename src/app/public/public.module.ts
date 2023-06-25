@@ -4,6 +4,8 @@ import { PublicComponent } from './public.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import {RouterOutlet} from "@angular/router";
+import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 
 
@@ -15,7 +17,9 @@ import {RouterOutlet} from "@angular/router";
   ],
     imports: [
         CommonModule,
-        RouterOutlet
+        RouterOutlet,
+        FormsModule,
+        HttpClientModule
     ]
 })
 export class PublicModule { }

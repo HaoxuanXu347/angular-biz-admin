@@ -26,7 +26,7 @@ git push --delete origin 2_module_public_securexx
   - use 5.2.3: https://getbootstrap.com/docs/5.2/getting-started/introduction/
   - dashboard: https://getbootstrap.com/docs/5.2/examples/dashboard/
 
-- git tag: 1_init_project_with_template_and_components
+- git tag 1_init_project_with_template_and_components
 
 ## module and code refactor
 
@@ -36,7 +36,7 @@ ng g m secure
 ng g c secure
 ng g c public
 ```
-- git tag: 2_module_public_secure
+- git tag 2_module_public_secure
 
 
 ## routing
@@ -47,4 +47,21 @@ ng g c public/register
 ```
 - create routes in `app-routing.module.ts`
 
-- git tag: 3_routing_public_login_register
+- git tag 3_routing_public_login_register
+
+
+## register Form and environments
+- https://getbootstrap.com/docs/5.2/examples/sign-in/
+- 
+- `ng g environments`
+  - https://dev.to/this-is-angular/angular-15-what-happened-to-environmentts-koh
+
+- add the following in `main.ts`
+```angular2html
+import {enableProdMode} from "@angular/core";
+
+if (environment.production) {
+  enableProdMode();
+}
+```
+- git tag 4_register_form_http_client_env
