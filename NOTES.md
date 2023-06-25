@@ -65,3 +65,9 @@ if (environment.production) {
 }
 ```
 - git tag 4_register_form_http_client_env
+
+## login, redirect, jwt cookie set
+
+- reuse css
+- check chrome application section to verify jwt cookie been set
+- git tag 5_register_form_http_client_env
