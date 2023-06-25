@@ -37,3 +37,14 @@ ng g c secure
 ng g c public
 ```
 - git tag: 2_module_public_secure
+
+
+## routing
+
+```
+ng g c public/login
+ng g c public/register
+```
+- create routes in `app-routing.module.ts`
+
+- git tag: 3_routing_public_login_register
