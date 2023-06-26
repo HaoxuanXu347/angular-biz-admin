@@ -71,3 +71,12 @@ if (environment.production) {
 - reuse css
 - check chrome application section to verify jwt cookie been set
 - git tag 5_register_form_http_client_env
+
+
+## auth_service_interface_login_logout
+
+- `ng g s services/auth`
+- `ng g i interfaces/user`, `ng g i interfaces/role`
+- in `tsconfig.json` add `"strictPropertyInitialization": false,`
+- 
+- git tag 6_auth_service_inteface_login_logout

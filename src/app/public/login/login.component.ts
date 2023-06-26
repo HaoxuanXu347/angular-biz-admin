@@ -3,20 +3,21 @@ import {FormBuilder, FormGroup} from "@angular/forms";
 import {Router} from "@angular/router";
 import {environment} from "../../../environments/environment";
 import {HttpClient} from "@angular/common/http";
+import {AuthService} from "../../services/auth.service";
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css','../public.component.css']
+  styleUrls: ['./login.component.css', '../public.component.css']
 })
 export class LoginComponent implements OnInit {
 
   form!: FormGroup;
 
   constructor(
-    private http: HttpClient,
     private formBuilder: FormBuilder,
     private router: Router,
+    private authService: AuthService
   ) {
   }
 
@@ -38,14 +39,12 @@ export class LoginComponent implements OnInit {
     //     console.log(res)
     //   }
     // )
-    this.http.post(`${environment.api}/login`, this.form.getRawValue(), {
-      withCredentials:true
-    })
-      .subscribe(
-        () => {
-          this.router.navigate(['']);
-        }
-      )
+
+    this.authService.login(this.form.getRawValue()).subscribe(
+      () => {
+        this.router.navigate(['/']);
+      }
+    )
   }
 
 }
