@@ -57,7 +57,7 @@ ng g c public/register
   - https://dev.to/this-is-angular/angular-15-what-happened-to-environmentts-koh
 
 - add the following in `main.ts`
-```angular2html
+```
 import {enableProdMode} from "@angular/core";
 
 if (environment.production) {
@@ -79,4 +79,4 @@ if (environment.production) {
 - `ng g i interfaces/user`, `ng g i interfaces/role`
 - in `tsconfig.json` add `"strictPropertyInitialization": false,`
 - 
-- git tag 6_auth_service_inteface_login_logout
+- git tag 6_auth_service_interface_login_logout
