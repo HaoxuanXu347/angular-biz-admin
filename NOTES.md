@@ -94,3 +94,8 @@ if (environment.production) {
 ```
 
 - git tag 7_input_interceptor
+
+## profile and dashboard page
+- ng g c secure/profile
+- ng g c secure/dashboard
+- git tag 8_profile_dashboard
