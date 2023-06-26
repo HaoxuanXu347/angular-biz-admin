@@ -80,3 +80,17 @@ if (environment.production) {
 - in `tsconfig.json` add `"strictPropertyInitialization": false,`
 - 
 - git tag 6_auth_service_interface_login_logout
+
+## input_interceptors
+- `@Input`: pass user from `SecureComponent` to `NavComponent` so there will be no twice `api/user` API call
+- Add interceptor: `ng g interceptor interceptors/credential`, then add the following in `app.module.ts`
+
+```
+   {
+      provide: HTTP_INTERCEPTORS,
+      useClass: CredentialInterceptor,
+      multi:true
+    }
+```
+
+- git tag 7_input_interceptor

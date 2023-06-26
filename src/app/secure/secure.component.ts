@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {AuthService} from "../services/auth.service";
+import {User} from "../interfaces/user";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-secure',
@@ -6,5 +9,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./secure.component.css']
 })
 export class SecureComponent {
+   user: User;
 
+  constructor(
+    private authService: AuthService,
+    private router: Router
+  ) {
+  }
+
+  ngOnInit(): void {
+    this.authService.user().subscribe(
+      {
+        next: (user)=>{this.user = user},
+        error: ()=>this.router.navigate(['/login'])
+      }
+    )
+  }
 }

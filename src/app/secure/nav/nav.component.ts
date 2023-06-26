@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {AuthService} from "../../services/auth.service";
 import {User} from "../../interfaces/user";
 
@@ -9,7 +9,7 @@ import {User} from "../../interfaces/user";
 })
 export class NavComponent implements OnInit {
 
-  user: User;
+  @Input('user') user: User|null;
 
   constructor(private authService: AuthService) {
   }
@@ -20,9 +20,9 @@ export class NavComponent implements OnInit {
     //   this.user = user;
     // })
 
-    this.authService.user().subscribe(
-      user=>this.user=user
-    );
+    // this.authService.user().subscribe(
+    //   user=>this.user=user
+    // );
   }
 
   logout(): void {
