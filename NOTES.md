@@ -108,3 +108,6 @@ if (environment.production) {
 ## users list
 - `ng g c secure/users`
 - git tag 10_user_lists
+
+## user pagination
+- git tag 11_user_pagination
