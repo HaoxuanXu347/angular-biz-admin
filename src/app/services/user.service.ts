@@ -12,7 +12,7 @@ export class UserService {
   endpoint = `${environment.api}/users`;
   constructor(private http: HttpClient) { }
 
-  all():Observable<any>{
-    return this.http.get<any>(this.endpoint)
+  all(page: number):Observable<any>{
+    return this.http.get<any>(`${this.endpoint}?page=${page}`);
   }
 }

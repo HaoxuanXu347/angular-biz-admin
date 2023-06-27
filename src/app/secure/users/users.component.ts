@@ -10,13 +10,36 @@ import {User} from "../../interfaces/user";
 export class UsersComponent implements OnInit{
   users: User[] = [];
   page = 1;
+  lastPage:number;
   constructor(private userService: UserService) {
   }
   ngOnInit(): void {
-    this.userService.all().subscribe(res=> this.users = res.data);
+    this.load();
   }
 
+  load(){
+    this.userService.all(this.page).subscribe((res:any)=> {
+      this.users = res.data
+      this.lastPage = res.meta.last_page
+      });
+  }
 
   delete(id:number):void {
+  }
+
+  next(): void {
+    if (this.page === this.lastPage) {
+      return;
+    }
+    this.page++;
+    this.load();
+  }
+
+  prev(): void {
+    if (this.page === 1) {
+      return;
+    }
+    this.page--;
+    this.load();
   }
 }
