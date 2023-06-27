@@ -104,3 +104,7 @@ if (environment.production) {
 ## event emitter
 
 - git tag 9_event_emitter
+
+## users list
+- `ng g c secure/users`
+- git tag 10_user_lists

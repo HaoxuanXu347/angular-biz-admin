@@ -4,9 +4,10 @@ import { SecureComponent } from './secure.component';
 import {NavComponent} from "./nav/nav.component";
 import {MenuComponent} from "./menu/menu.component";
 import { ProfileComponent } from './profile/profile.component';
-import {RouterOutlet} from "@angular/router";
+import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { UsersComponent } from './users/users.component';
 
 
 
@@ -16,7 +17,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     NavComponent,
     MenuComponent,
     ProfileComponent,
-    DashboardComponent
+    DashboardComponent,
+    UsersComponent
   ],
   exports: [
     SecureComponent
@@ -25,7 +27,9 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     CommonModule,
     RouterOutlet,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterLink,
+    RouterLinkActive
   ]
 })
 export class SecureModule { }
