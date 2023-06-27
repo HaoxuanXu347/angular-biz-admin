@@ -99,3 +99,8 @@ if (environment.production) {
 - ng g c secure/profile
 - ng g c secure/dashboard
 - git tag 8_profile_dashboard
+
+
+## event emitter
+
+- git tag 9_event_emitter
