@@ -111,3 +111,9 @@ if (environment.production) {
 
 ## user pagination
 - git tag 11_user_pagination
+
+## curd_user_page
+- `ng g c secure/users/user-create`
+- `ng g s services/role`
+- `ng g c secure/users/user-edit`
+- git tag 12_user_crud_page
