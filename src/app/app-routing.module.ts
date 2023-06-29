@@ -11,6 +11,7 @@ import {UserCreateComponent} from "./secure/users/user-create/user-create.compon
 import {UserEditComponent} from "./secure/users/user-edit/user-edit.component";
 import {RolesComponent} from "./secure/roles/roles.component";
 import {RoleCreateComponent} from "./secure/roles/role-create/role-create.component";
+import {ProductsComponent} from "./secure/products/products.component";
 import {RoleEditComponent} from "./secure/roles/role-edit/role-edit.component";
 
 // 1. routes
@@ -34,6 +35,7 @@ const routes: Routes = [
       {path: 'roles', component: RolesComponent},
       {path: 'roles/create', component: RoleCreateComponent},
       {path: 'roles/:id/edit', component: RoleEditComponent},
+      {path: 'products', component: ProductsComponent},
     ]
 
   },

@@ -13,6 +13,12 @@ git tag (list all tags)
 ## how to delete a tag
 git tag -d 2_module_public_securexx
 git push --delete origin 2_module_public_securexx
+
+## how to re-tag, tag several commits into one tag
+git tag 14_role_crud_with_backend_api_fix 9bae0159704870fae87864d8126337d14c1a786e
+git push origin --tags
+with 9bae0159704870fae87864d8126337d14c1a786e being the beginning of the hash of the commit you want to tag 
+and 14_role_crud_with_backend_api_fix being the version you want to tag.
 ```
 
 - `ng new angular-biz-admin --skip-git`
@@ -132,3 +138,10 @@ if (environment.production) {
 - `ng g c secure/roles/role-edit`
 - git tag 14_role_crud_with_backend_api_fix
 - N.B., if we remove the `view_users` Permissions for Admin (which is the logged-in user), we may not be able to view users
+
+
+## products
+- `ng g c secure/products`
+- `ng g i interfaces/product`
+- `ng g s services/product`
+- git tag 15_product_list_delete_pagination
