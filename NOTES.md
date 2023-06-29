@@ -121,3 +121,13 @@ if (environment.production) {
 ## abstract class
 - `ng g s services/rest`
 - git tag 13_abstract_class_rest_service
+
+
+## Roles crud
+- `ng g c secure/roles`
+- `ng g c secure/roles/role-create`
+- `ng g s services/permission`
+- `ng g i interfaces/permission`
+- fix go-biz-admin roleController `git tag 16_role_api_fix`
+- `ng g c secure/roles/role-edit`
+- git tag 14_role_crud_with_backend_api_fix
