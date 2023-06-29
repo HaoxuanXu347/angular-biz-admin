@@ -131,3 +131,4 @@ if (environment.production) {
 - fix go-biz-admin roleController `git tag 16_role_api_fix`
 - `ng g c secure/roles/role-edit`
 - git tag 14_role_crud_with_backend_api_fix
+- N.B., if we remove the `view_users` Permissions for Admin (which is the logged-in user), we may not be able to view users
