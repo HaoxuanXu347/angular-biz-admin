@@ -117,3 +117,7 @@ if (environment.production) {
 - `ng g s services/role`
 - `ng g c secure/users/user-edit`
 - git tag 12_user_crud_page
+
+## abstract class
+- `ng g s services/rest`
+- git tag 13_abstract_class_rest_service
