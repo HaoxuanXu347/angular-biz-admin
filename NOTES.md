@@ -176,3 +176,8 @@ if (environment.production) {
 ## animation
 - add `BrowserAnimationsModule` in `app.module.ts`
 - git tag 20_order_item_animation
+
+## csv export and chart
+- `npm i c3` https://c3js.org/ then `npm i --save-dev @types/c3`
+- add icon from `http://svgicons.sparkk.fr/`
+- git tag 21_csv_export_and_chart_icon

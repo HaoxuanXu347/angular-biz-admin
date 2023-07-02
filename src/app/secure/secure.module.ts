@@ -19,9 +19,6 @@ import { ProductCreateComponent } from './products/product-create/product-create
 import { UploadComponent } from './components/upload/upload.component';
 import { ProductEditComponent } from './products/product-edit/product-edit.component';
 import { OrdersComponent } from './orders/orders.component';
-
-
-
 @NgModule({
   declarations: [
     SecureComponent,
@@ -45,14 +42,14 @@ import { OrdersComponent } from './orders/orders.component';
   exports: [
     SecureComponent
   ],
-  imports: [
-    CommonModule,
-    RouterModule,
-    RouterOutlet,
-    FormsModule,
-    ReactiveFormsModule,
-    RouterLink,
-    RouterLinkActive
-  ]
+    imports: [
+        CommonModule,
+        RouterModule,
+        RouterOutlet,
+        FormsModule,
+        ReactiveFormsModule,
+        RouterLink,
+        RouterLinkActive,
+    ]
 })
 export class SecureModule { }

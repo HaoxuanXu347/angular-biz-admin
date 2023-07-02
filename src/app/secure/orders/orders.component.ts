@@ -47,4 +47,17 @@ export class OrdersComponent implements OnInit {
   itemState(id: number): string {
     return this.selected === id ? 'show' : 'hide';
   }
+
+  export(): void {
+    this.orderService.export().subscribe(
+      res => {
+        const blob = new Blob([res], {type: 'text/csv'});
+        const downloadUrl = window.URL.createObjectURL(res);
+        const link = document.createElement('a');
+        link.href = downloadUrl;
+        link.download = 'orders.csv';
+        link.click();
+      }
+    );
+  }
 }
