@@ -145,3 +145,8 @@ if (environment.production) {
 - `ng g i interfaces/product`
 - `ng g s services/product`
 - git tag 15_product_list_delete_pagination
+
+## paginator and product creation
+- `ng g c secure/components/paginator`
+- `ng g c secure/products/product-create`
+- git tag 16_product_creation_paginator
