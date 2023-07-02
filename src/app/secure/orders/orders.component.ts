@@ -10,6 +10,10 @@ import {Order} from "../../interfaces/order";
 export class OrdersComponent implements OnInit {
   orders: Order[] = [];
   lastPage: number;
+  selected: number;
+
+  constructor(private orderService: OrderService) {
+  }
   ngOnInit(): void {
     this.load();
   }
@@ -22,7 +26,10 @@ export class OrdersComponent implements OnInit {
       }
     );
   }
-  constructor(private orderService: OrderService) {
+
+
+  select(id: number): void {
+    this.selected = this.selected === id ? 0 : id;
   }
 
 }
