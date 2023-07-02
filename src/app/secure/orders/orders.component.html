@@ -24,6 +24,7 @@
       </tr>
       <tr [hidden]="order.id !== selected">
         <td colspan="5">
+          <div class="overflow-hidden" [@tableState]="itemState(order.id)">
             <table class="table table-sm">
               <thead>
               <tr>
@@ -42,6 +43,7 @@
               </tr>
               </tbody>
             </table>
+          </div>
         </td>
       </tr>
     </ng-container>

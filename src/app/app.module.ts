@@ -7,6 +7,7 @@ import {SecureModule} from "./secure/secure.module";
 import {PublicModule} from "./public/public.module";
 import {HTTP_INTERCEPTORS} from "@angular/common/http";
 import {CredentialInterceptor} from "./interceptors/credential.interceptor";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {CredentialInterceptor} from "./interceptors/credential.interceptor";
     BrowserModule,
     AppRoutingModule,
     SecureModule,
-    PublicModule
+    PublicModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {

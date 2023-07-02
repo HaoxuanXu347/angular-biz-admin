@@ -171,3 +171,8 @@ if (environment.production) {
 
 ## order item
 - git tag 19_order_item_list
+
+
+## animation
+- add `BrowserAnimationsModule` in `app.module.ts`
+- git tag 20_order_item_animation
