@@ -150,3 +150,8 @@ if (environment.production) {
 - `ng g c secure/components/paginator`
 - `ng g c secure/products/product-create`
 - git tag 16_product_creation_paginator
+
+
+## upload image
+- `ng g c secure/components/upload`
+- git tag 17_image_upload
