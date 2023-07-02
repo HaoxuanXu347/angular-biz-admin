@@ -159,3 +159,4 @@ if (environment.production) {
 
 ## edit product
 - `ng g c secure/products/product-edit`
+- git tag 18_edit_product
