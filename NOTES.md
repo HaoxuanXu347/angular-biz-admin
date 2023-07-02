@@ -155,3 +155,7 @@ if (environment.production) {
 ## upload image
 - `ng g c secure/components/upload`
 - git tag 17_image_upload
+
+
+## edit product
+- `ng g c secure/products/product-edit`
