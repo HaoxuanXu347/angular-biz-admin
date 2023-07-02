@@ -160,3 +160,10 @@ if (environment.production) {
 ## edit product
 - `ng g c secure/products/product-edit`
 - git tag 18_edit_product
+
+## order
+- `ng g c secure/orders`
+- `ng g s services/order`
+- `ng g i interfaces/order`
+- `ng g i interfaces/order-item`
+- git tag 19_order_list

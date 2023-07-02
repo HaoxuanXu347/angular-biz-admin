@@ -18,6 +18,7 @@ import { PaginatorComponent } from './components/paginator/paginator.component';
 import { ProductCreateComponent } from './products/product-create/product-create.component';
 import { UploadComponent } from './components/upload/upload.component';
 import { ProductEditComponent } from './products/product-edit/product-edit.component';
+import { OrdersComponent } from './orders/orders.component';
 
 
 
@@ -38,7 +39,8 @@ import { ProductEditComponent } from './products/product-edit/product-edit.compo
     PaginatorComponent,
     ProductCreateComponent,
     UploadComponent,
-    ProductEditComponent
+    ProductEditComponent,
+    OrdersComponent
   ],
   exports: [
     SecureComponent
